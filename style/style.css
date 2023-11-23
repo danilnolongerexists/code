@@ -4,6 +4,7 @@
 
 header {
     background: rgba(209, 184, 184, 0.4);
+    position: absolute;
 }
 
 .burger {
@@ -62,19 +63,31 @@ li{
 }
 
 footer{
-    width: 1263px;
+    width: 100%;
     height: 160px;
     flex-shrink: 0;
     background: #BA3133;
     margin-top: -10px;
+    display: flex;
+    align-items: center;
+}
+
+.footer-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 3.294vw;
 }
 
 .text-footer {
-    float: left;
-    width: 49%;
-    margin-top: 30px;
-    margin-left: 30px;
     display: flex;
     align-items: center;
     color: #ffffff;
+    line-height: 1.432vw;
+    font-size: 0.878vw;
+}
+
+.text-footer.text-footer_left {
+    width: 30.161vw;
+    margin-right: 7.613vw;
+    line-height: normal;
 }
