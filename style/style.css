@@ -62,6 +62,16 @@ li{
     width: 1263px;
 }
 
+.big-logo {
+    display: flex;
+    position: absolute;
+    margin-top: 9.931vw;
+    margin-left: 3.953vw;
+    width: 22.914vw;
+    height: 28.014vw;
+    flex-shrink: 0;
+}
+
 footer{
     width: 100%;
     height: 160px;
