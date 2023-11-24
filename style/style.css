@@ -5,6 +5,7 @@
 header {
     background: rgba(209, 184, 184, 0.4);
     position: absolute;
+    width: 100%;
 }
 
 .burger {
@@ -59,7 +60,7 @@ li{
 }
 
 .background {
-    width: 1263px;
+    width: 100%;
 }
 
 .big-logo {
