@@ -204,7 +204,6 @@ section {
 .contact-form {
     height: 48.097vw;
     width: 42.246vw;
-    border: 1px solid #000;
     margin-right: 5.485vw;
 }
 
@@ -229,6 +228,7 @@ section {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    margin-bottom: 1.933vw;
 }
 
 .name-and-phone {
@@ -238,15 +238,52 @@ section {
     width: 28.497vw;
     height: 2.336vw;
     flex-shrink: 0;
+    font-size: 1.318vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 1.912vw;
+}
+
+.contact-message {
+    border-radius: 0.732vw;
+    border: 0.073vw solid #C4C4C4;
+    background: #FFF;
+    width: 28.472vw;
+    height: 13.543vw;
+    flex-shrink: 0;
+    font-size: 1.318vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 1.912vw;
+}
+
+::placeholder {
+    color: #C4C4C4;
+    font-size: 1.318vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+input {
+    padding-left: 0.922vw;
 }
 
 .extra-title {
     margin-top: 5.783vw;
+    color: #BA3133;
+    text-align: center;
+    font-size: 2.416vw;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
 }
 
 .extra-wrapper {
     display: flex;
-    margin: 3.955vw 4.429vw 6.442vw 4.429vw;
+    margin: 3.955vw 4.429vw 4.758vw 4.429vw;
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
@@ -254,6 +291,25 @@ section {
 .extra-photo {
     width: 24.963vw;
     height: 15.593vw;
+}
+
+.extra-text-wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.extra-item-text {
+    margin: 1.464vw 0 1.684vw;
+    color: #BA3133;
+    text-align: center;
+    font-size: 1.83vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 25.037vw;
+    height: 6.003vw;
 }
 
 footer{
