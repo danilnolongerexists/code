@@ -188,9 +188,9 @@ section {
     margin: 1.684vw 0 6.223vw;
 }
 
-.contact-form {
+.contact-section {
     display: flex;
-    margin: 6.735vw 9.151vw 7.101vw 5.485vw;
+    flex-direction: row;
 }
 
 .contact-photo {
@@ -198,10 +198,62 @@ section {
     width: 38.141vw;
     height: 48.097vw;
     flex-shrink: 0;
+    margin: 6.735vw 4.471vw 7.101vw 4.978vw;
 }
 
-.contact-form-text {
-    border: 0;
+.contact-form {
+    height: 48.097vw;
+    width: 42.246vw;
+    border: 1px solid #000;
+    margin-right: 5.485vw;
+}
+
+.contact-title {
+    font-size: 2.416vw;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.contact-description {
+    margin-top: 3.519vw;
+    font-size: 1.318vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 3.519vw;
+}
+
+.write-us {
+    margin-top: 3.143vw;
+    font-size: 1.464vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.name-and-phone {
+    border-radius: 0.732vw;
+    border: 0.073vw solid #C4C4C4;
+    background: #FFF;
+    width: 28.497vw;
+    height: 2.336vw;
+    flex-shrink: 0;
+}
+
+.extra-title {
+    margin-top: 5.783vw;
+}
+
+.extra-wrapper {
+    display: flex;
+    margin: 3.955vw 4.429vw 6.442vw 4.429vw;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.extra-photo {
+    width: 24.963vw;
+    height: 15.593vw;
 }
 
 footer{
