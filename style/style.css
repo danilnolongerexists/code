@@ -186,6 +186,8 @@ section {
     font-weight: 400;
     line-height: normal;
     margin: 1.684vw 0 6.223vw;
+    text-decoration: none;
+    color: #BA3133;
 }
 
 .contact-section {
@@ -215,11 +217,11 @@ section {
 }
 
 .contact-description {
-    margin-top: 3.519vw;
+    margin-top: 3vw;
     font-size: 1.318vw;
     font-style: normal;
     font-weight: 400;
-    line-height: 3.519vw;
+    line-height: 3vw;
 }
 
 .write-us {
@@ -271,6 +273,21 @@ input {
     padding-left: 0.922vw;
 }
 
+.send {
+    width: 8.224vw;
+    height: 2.343vw;
+    flex-shrink: 0;
+    color: #FFF;
+    text-align: center;
+    font-size: 1.318vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border-radius: 0.732vw;
+    background: #FEC22E;
+    border: 0;
+}
+
 .extra-title {
     margin-top: 5.783vw;
     color: #BA3133;
@@ -310,6 +327,129 @@ input {
     line-height: normal;
     width: 25.037vw;
     height: 6.003vw;
+}
+
+.interview-title {
+    margin: 5.857vw 0 3.367vw;
+    color: #000;
+    font-size: 2.416vw;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.interview {
+    display: flex;
+    width: 88.873vw;
+    margin: 0 5.49vw 5.49vw 5.637vw;
+    color: #000;
+    text-align: center;
+    font-size: 2.196vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    flex-direction: column;
+    align-items: center;
+}
+
+.quests {
+    display: flex;
+    margin-top: 3.294vw;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    color: #000;
+    font-size: 1.83vw;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.question {
+    margin-top: 3.042vw;
+}
+
+.vote {
+    margin-top: 3.587vw;
+    width: 18.597vw;
+    height: 4.758vw;
+    flex-shrink: 0;
+    color: #FFF;
+    text-align: center;
+    font-size: 1.83vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border-radius: 0.732vw;
+    background: #FEC22E;
+    border: 0;
+}
+
+.archive {
+    margin-top: 1.537vw;
+    color: #A1A1A1;
+    text-align: center;
+    font-size: 1.318vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+}
+
+.links-title {
+    margin: 4.978vw 0 4.539vw;
+    color: #BA3133;
+    text-align: center;
+    font-size: 2.416vw;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.links {
+    display: flex;
+    height: 19.912vw;
+    width: 97.804vw;
+    margin-bottom: 8.419vw;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.link {
+    display: flex;
+    width: 23.353vw;
+    height: 8.785vw;
+    flex-shrink: 0;
+    border-radius: 0.732vw;
+    background: #FFF;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.link-photo {
+    display: flex;
+}
+
+.link_card {
+    width: 13.616vw;
+}
+
+.card_text1 {
+    color: #BA3133;
+    text-align: center;
+    font-size: 0.805vw;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.card_text2 {
+    color: #090970;
+    text-align: center;
+    font-size: 0.805vw;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
 }
 
 footer{
