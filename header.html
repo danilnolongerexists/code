@@ -4,11 +4,17 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Школа №43</title>
     <link rel="stylesheet" href="style/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
+    <!-- HEADER -->
     <header>
         <div class="wrapper">
             <div class="logo">
@@ -35,14 +41,21 @@
             </div>
         </div>
     </header>
-    <div>
-        <img src="images/big-logo.png" class="big-logo" />
-        <!-- 
-            <h1>
-                Муниципальное автономное общеобразовательное<br>учреждение начальная общеобразовательная школа №43
-            </h1>  -->
-        <img src="images/background.png" class="background" alt="" />
+    <!-- SLIDER -->
+    <div class="slider">
+        <img src="images/arrow-left (1).png" alt="">
+        <div class="main-wrapper">
+            <img src="images/big-logo.png" class="big-logo" />
+            <div class="text-main-wrapper">
+                <h2 class="main-title">Муниципальное автономное общеобразовательное<br>
+                    учреждение начальная общеобразовательная школа №43</h2>
+                <h3 class="main-info">Адрес МАОУ НОШ № 43: 622048, обл. Свердловская, г. Нижний Тагил, ул. Зари, д. 30<br></h3>
+                <h3 class="main-info">Телефон: (3435) 31-04-08  Электронная почта: skhool43@yandex.ru</h3>
+            </div>
+        </div>
+        <img src="images/arrow-rigth (1).png" alt="">
     </div>
+    <!-- NEWS -->
     <section>
         <h2 class="section-title">Новости</h2>
         <div class="card-items">
@@ -117,6 +130,7 @@
         </div>
         <a href="#" class="news-bottom">Ещё новости ></a>
     </section>
+    <!-- WEEKDAYS -->
     <section class="section-orange">
         <h2 class="section-photo-title">Наши будни</h2>
         <div class="wrapper-photo">
@@ -129,24 +143,27 @@
         </div>
         <a href="#" class="photo-text-bottom">Ещё фото ></a>
     </section>
+    <!-- CONTACTS -->
     <section class="contact-section">
         <img src="images/contact-form__photo.png" class="contact-photo" alt="" />
         <div class="contact-form">
             <h2 class="contact-title">Контакты</h2>
             <div class="contact-description">
                 Адрес: 622048, обл. Свердловская, г. Нижний Тагил, ул. Зари, д. 30<br />
-                Телефон: (3435) 31-04-08<br />
+                <span>
+                    Телефон: (3435) 31-04-08<br />
+                </span>
                 Электронная почта: skhool43@yandex.ru<br />
-                <p class="write-us">Напишите нам:</p>
             </div>
             <div class="input-contacts">
-                <input type="text" id="text" class="name-and-phone" placeholder="Ваше имя" />
-                <input type="text" id="text" class="name-and-phone" placeholder="Ваш телефон" />
-                <input type="text" id="text" class="contact-message" placeholder="Сообщение" />
+                <input type="text" id="name" class="name-and-phone" placeholder="Ваше имя" />
+                <input type="tell" id="phone" class="name-and-phone" placeholder="Ваш телефон" />
+                <input type="text" id="message" class="contact-message" placeholder="Сообщение" />
             </div>
             <button class="send">Отправить</button>
         </div>
     </section>
+    <!-- EXTRA -->
     <section class="section-orange">
         <h2 class="extra-title">Дополнительные предметы и секции</h2>
         <div class="extra-wrapper">
@@ -182,6 +199,7 @@
             </div>
         </div>
     </section>
+    <!-- INTERVIEW -->
     <section>
         <h2 class="interview-title">Опрос</h2>
         <div class="interview">
@@ -208,6 +226,7 @@
             <a href="#" class="archive">Посмотреть архив опросов</a>
         </div>
     </section>
+    <!-- LINKS -->
     <section class="section-orange">
         <h2 class="links-title">Ссылки</h2>
         <div class="links">
@@ -252,8 +271,8 @@
             <div class="link">
                 <img src="images/links__logo7.png" style=" width: 4.173vw; height: 3.66vw;" class="link-photo" />
                 <div class="link_card">
-                    <p class="card_text1">ФЕДЕРАЛЬНЫЙ ПОРТАЛ</p>
-                    <p class="card_text2">Российское Образование</p>
+                    <p class="card_text1big">ФЕДЕРАЛЬНЫЙ ПОРТАЛ</p>
+                    <p class="card_text2big">Российское Образование</p>
                 </div>
             </div>
             <div class="link">
@@ -261,6 +280,7 @@
             </div>
         </div>
     </section>
+    <!-- FOOTER -->
     <footer>
         <div class="footer-wrapper">
             <div class="text-footer text-footer_left">

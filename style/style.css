@@ -1,11 +1,14 @@
 * {
     margin: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
+/*HEADER*/
 header {
     background: rgba(209, 184, 184, 0.4);
     position: absolute;
     width: 100%;
+    height: 6.589vw;
 }
 
 .burger {
@@ -17,7 +20,6 @@ header {
     /*max-width: 1248px;*/
     width: 90.044vw;
     padding: 0.293vw 1.181vw 0.339vw 1.171vw;
-    align-items: center;
 }
 
 ul {
@@ -25,9 +27,11 @@ ul {
     flex-direction: row;
     /*justify-content: center;*/
     list-style-type: none;
-    width: 62.152vw;
     font-size: 1.391vw;
-    margin-left: -1vw;
+    margin: 1.245vw 0 0 1.377vw;
+    width: 68.748vw;
+    height: 3.707vw;
+    flex-shrink: 0;
 }
 
 li{
@@ -36,14 +40,20 @@ li{
 
 .text-header {
     text-decoration: none;
+    color: #000;
 }
 
 .logo {
-    margin-left: 0.5vw;
+    width: 4.758vw;
+    height: 5.857vw;
+    flex-shrink: 0;
 }
 
 .burger {
-    margin-left: 3vw;
+    margin: 2.505vw 0 0 1.977vw;
+    width: 2.203vw;
+    height: 1.258vw;
+    flex-shrink: 0;
 }
 
 #search {
@@ -51,27 +61,93 @@ li{
 
 }
 
+
 .lupa {
-    margin-left: -5vw;
+    margin: 2.16vw 0 0 -5.5vw;
 }
+
 
 .img {
-    margin-left: 9.5vw;
+    margin-left: 7.607vw;
+    width: 9.297vw;
+    height: 6.735vw;
+    flex-shrink: 0;
 }
 
-.background {
-    width: 100%;
+/*SLIDER*/
+
+.slider {
+    display: flex;
+    align-items: center;
+    /* margin-left: 3.95vw; */
+    background-image: url(../images/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 43.8vw;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.main-wrapper {
+    display: flex;
+    height: 28.014vw;
+    width: 89.531vw;
+    margin: 3.05vw 0 0 0;
+
 }
 
 .big-logo {
-    display: flex;
-    position: absolute;
-    margin-top: 9.931vw;
-    margin-left: 3.953vw;
+    /*width: 23.5%;*/
     width: 22.914vw;
     height: 28.014vw;
     flex-shrink: 0;
+    margin-left: 2%;
 }
+
+.text-main-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+    justify-content: center;
+}
+
+.arrow-right{
+    margin-left: 2vw;
+    width: 1.719vw;
+    height: 2.604vw;
+}
+.arrow-left{
+    width: 1.719vw;
+    height: 2.604vw;
+    margin: 1.171vw;
+}
+
+.main-title {
+    color: #FFF;
+    font-size: 29px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%; /* 43.5px */
+    margin-bottom: 1.171vw;
+}
+
+.main-info {
+    color: #FFF;
+    font-size: 1.464vw;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 1.245vw;
+    /*
+    color: #ffffff;
+    font-size: 1.042vw;
+    font-weight: 500;
+    line-height: 1.354vw;
+    letter-spacing: 0em;
+    text-align: left;*/
+}
+
+
 
 section {
     display: flex;
@@ -79,6 +155,8 @@ section {
     flex-direction: column;
     align-items: center;
 }
+
+/*NEWS*/  
 
 .section-title {
     margin: 5.127vw 0 2.928vw;
@@ -152,10 +230,14 @@ section {
     color: #000;
 }
 
+
+
 .section-orange {
     background: #FEC22E;
     flex-shrink: 0;
 }
+
+/*WEEKDAYS*/
 
 .section-photo-title {
     font-size: 2.416vw;
@@ -190,6 +272,8 @@ section {
     color: #BA3133;
 }
 
+/*CONTACTS*/
+
 .contact-section {
     display: flex;
     flex-direction: row;
@@ -221,7 +305,6 @@ section {
     font-size: 1.318vw;
     font-style: normal;
     font-weight: 400;
-    line-height: 3vw;
 }
 
 .write-us {
@@ -288,6 +371,8 @@ input {
     border: 0;
 }
 
+/*EXTRA*/
+
 .extra-title {
     margin-top: 5.783vw;
     color: #BA3133;
@@ -328,6 +413,8 @@ input {
     width: 25.037vw;
     height: 6.003vw;
 }
+
+/*INTERVIEW*/
 
 .interview-title {
     margin: 5.857vw 0 3.367vw;
@@ -396,6 +483,8 @@ input {
     text-decoration: none;
 }
 
+/*LINKS*/
+
 .links-title {
     margin: 4.978vw 0 4.539vw;
     color: #BA3133;
@@ -451,6 +540,28 @@ input {
     font-weight: 700;
     line-height: normal;
 }
+
+.card_text1big {
+    color: #BA3133;
+    text-align: center;
+    font-size: 1.025vw;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.card_text2big {
+    color: #373761;
+    text-align: center;
+    font-size: 1.098vw;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+/*FOOTER*/
 
 footer{
     width: 100%;
