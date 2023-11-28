@@ -16,53 +16,66 @@ header {
     margin-left: 3vw;
 }
 
-.burger {
+#menu__toggle {
     display: none;
 }
-.burger-wrapper label {
+
+/* стилизуем кнопку */
+.menu__btn {
     display: flex;
-    flex-direction: column;
-    width: 2.732vw;
-    height: 0.366vw;
-    background-color: #000;
+    /* используем flex для центрирования содержимого */
+    align-items: center;
+    /* центрируем содержимое кнопки */
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    z-index: 1;
 }
 
-.burger-wrapper label:before {
+/* добавляем "гамбургер" */
+.menu__btn>span,
+.menu__btn>span::before,
+.menu__btn>span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #616161;
+    transition: 0.3s;
+}
+
+.menu__btn>span::before {
     content: '';
-    display: inline-block;
-    width: 2.332vw;
-    height: 0.366vw;
-    position: relative;
-    top: -0.566vw;
-    border: 0.18vw solid black;
+    top: -8px;
 }
-.burger-wrapper label:after {
+
+.menu__btn>span::after {
     content: '';
-    display: inline-block;
-    width: 2.332vw;
-    height: 0.266vw;
-    position: relative;
-    top: 0.366vw;
-    border: 0.18vw solid black;
+    top: 8px;
 }
 
-.burger:checked~label {
-    background-color: transparent;
-}
-
-.burger:checked+label::after {
+#menu__toggle:checked~.menu__btn>span {
     transform: rotate(45deg);
 }
 
-.burger:checked+label::before {
-    transform: rotate(-45deg);
+#menu__toggle:checked~.menu__btn>span::before {
+    top: 0;
+    transform: rotate(0);
+}
+
+#menu__toggle:checked~.menu__btn>span::after {
+    top: 0;
+    transform: rotate(90deg);
 }
 
 .burger-menu {
     display: none;
 }
 
-.burger-menu ul{
+.burger-menu ul {
     display: flex;
     flex-direction: column;
     height: 0;
@@ -88,7 +101,7 @@ ul {
     flex-shrink: 0;
 }
 
-li{
+li {
     margin: 1vw;
 }
 
@@ -165,7 +178,7 @@ li{
     bottom: 2vw;
 }
 
-.owl-dot span{
+.owl-dot span {
     width: 1vw;
     height: 1vw;
     background-color: #FEC22E;
@@ -202,12 +215,13 @@ li{
     justify-content: center;
 }
 
-.arrow-right{
+.arrow-right {
     margin-left: 2vw;
     width: 1.719vw;
     height: 2.604vw;
 }
-.arrow-left{
+
+.arrow-left {
     width: 1.719vw;
     height: 2.604vw;
     margin: 1.171vw;
@@ -218,7 +232,8 @@ li{
     font-size: 29px;
     font-style: normal;
     font-weight: 500;
-    line-height: 150%; /* 43.5px */
+    line-height: 150%;
+    /* 43.5px */
     margin-bottom: 1.171vw;
 }
 
@@ -247,7 +262,7 @@ section {
     align-items: center;
 }
 
-/*NEWS*/  
+/*NEWS*/
 
 .section-title {
     margin: 5.127vw 0 2.928vw;
@@ -300,7 +315,8 @@ section {
     width: 18.59vw;
     font-style: normal;
     font-weight: 400;
-    line-height: 2.196vw; /* 166.667% */
+    line-height: 2.196vw;
+    /* 166.667% */
 }
 
 .news-item-date {
@@ -560,44 +576,44 @@ textarea {
 
 input[type='radio'],
 label {
-  cursor: pointer;
+    cursor: pointer;
 }
 
 input[type='radio'] {
-  position: relative;
-  height: 1.611vw;
-  width: 1.611vw;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  outline: none;
-  margin-right: 3.781vw;
+    position: relative;
+    height: 1.611vw;
+    width: 1.611vw;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    margin-right: 3.781vw;
 }
 
 input[type='radio']::before {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 1.611vw;
-  height: 1.611vw;
-  border-radius: 50%;
-  transform: translate(-50%, -50%);
-  background-color: #FEC22E;
-  border: 0.146vw solid #FEC22E;
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 1.611vw;
+    height: 1.611vw;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #FEC22E;
+    border: 0.146vw solid #FEC22E;
 }
 
 input[type='radio']:checked::after {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 1.098vw;
-  height: 1.098vw;
-  border-radius: 50%;
-  background-color: #ffffff;
-  transform: translate(-50%, -50%);
-  visibility: visible;
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 1.098vw;
+    height: 1.098vw;
+    border-radius: 50%;
+    background-color: #ffffff;
+    transform: translate(-50%, -50%);
+    visibility: visible;
 }
 
 .question {
@@ -711,7 +727,7 @@ input[type='radio']:checked::after {
 
 /*FOOTER*/
 
-footer{
+footer {
     width: 100%;
     height: 11.713vw;
     flex-shrink: 0;
