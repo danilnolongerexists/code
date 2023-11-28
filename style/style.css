@@ -12,12 +12,65 @@ header {
     z-index: 1;
 }
 
-.burger {
+.burger-wrapper {
     margin-left: 3vw;
+}
+
+.burger {
+    display: none;
+}
+.burger-wrapper label {
+    display: flex;
+    flex-direction: column;
+    width: 2.732vw;
+    height: 0.366vw;
+    background-color: #000;
+}
+
+.burger-wrapper label:before {
+    content: '';
+    display: inline-block;
+    width: 2.332vw;
+    height: 0.366vw;
+    position: relative;
+    top: -0.566vw;
+    border: 0.18vw solid black;
+}
+.burger-wrapper label:after {
+    content: '';
+    display: inline-block;
+    width: 2.332vw;
+    height: 0.266vw;
+    position: relative;
+    top: 0.366vw;
+    border: 0.18vw solid black;
+}
+
+.burger:checked~label {
+    background-color: transparent;
+}
+
+.burger:checked+label::after {
+    transform: rotate(45deg);
+}
+
+.burger:checked+label::before {
+    transform: rotate(-45deg);
+}
+
+.burger-menu {
+    display: none;
+}
+
+.burger-menu ul{
+    display: flex;
+    flex-direction: column;
+    height: 0;
 }
 
 .wrapper {
     display: flex;
+    align-items: center;
     /*max-width: 1248px;*/
     width: 90.044vw;
     padding: 0.293vw 1.181vw 0.339vw 1.171vw;
