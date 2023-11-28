@@ -9,6 +9,7 @@ header {
     position: absolute;
     width: 100%;
     height: 6.589vw;
+    z-index: 1;
 }
 
 .burger {
@@ -86,6 +87,43 @@ li{
     height: 43.8vw;
     flex-direction: row;
     justify-content: space-around;
+}
+
+.owl-nav {
+    font-size: 10vw;
+    display: flex;
+}
+
+.owl-prev {
+    position: absolute;
+    top: 14vw;
+    left: 1vw;
+}
+
+.owl-next {
+    position: absolute;
+    top: 14vw;
+    right: 1vw;
+}
+
+.owl-dots {
+    position: absolute;
+    left: 45.25vw;
+    bottom: 2vw;
+}
+
+.owl-dot span{
+    width: 1vw;
+    height: 1vw;
+    background-color: #FEC22E;
+    border-radius: 1vw;
+    border: solid #FEC22E 0.4vw;
+    display: inline-block;
+    margin: 0.5vw;
+}
+
+.owl-dot.active span {
+    background-color: #BA3133;
 }
 
 .main-wrapper {
@@ -291,6 +329,8 @@ section {
     height: 48.097vw;
     width: 42.246vw;
     margin-right: 5.485vw;
+    display: flex;
+    flex-direction: column;
 }
 
 .contact-title {
@@ -301,6 +341,7 @@ section {
 }
 
 .contact-description {
+    line-height: 2.20vw !important;
     margin-top: 3vw;
     font-size: 1.318vw;
     font-style: normal;
@@ -314,6 +355,12 @@ section {
     font-weight: 400;
     line-height: normal;
     margin-bottom: 1.933vw;
+}
+
+.input-contacts {
+    display: flex;
+    flex-direction: column;
+    border: 0;
 }
 
 .name-and-phone {
@@ -335,7 +382,7 @@ section {
     border: 0.073vw solid #C4C4C4;
     background: #FFF;
     width: 28.472vw;
-    height: 13.543vw;
+    height: 13.54vw;
     flex-shrink: 0;
     font-size: 1.318vw;
     font-style: normal;
@@ -356,7 +403,12 @@ input {
     padding-left: 0.922vw;
 }
 
+textarea {
+    padding-left: 0.922vw;
+}
+
 .send {
+    margin-top: 1.4vw;
     width: 8.224vw;
     height: 2.343vw;
     flex-shrink: 0;
@@ -369,6 +421,7 @@ input {
     border-radius: 0.732vw;
     background: #FEC22E;
     border: 0;
+    /*margin-bottom: 7.101vw;*/
 }
 
 /*EXTRA*/
@@ -450,6 +503,48 @@ input {
     font-size: 1.83vw;
     font-style: normal;
     font-weight: 400;
+}
+
+input[type='radio'],
+label {
+  cursor: pointer;
+}
+
+input[type='radio'] {
+  position: relative;
+  height: 1.611vw;
+  width: 1.611vw;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  margin-right: 3.781vw;
+}
+
+input[type='radio']::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 1.611vw;
+  height: 1.611vw;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #FEC22E;
+  border: 0.146vw solid #FEC22E;
+}
+
+input[type='radio']:checked::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 1.098vw;
+  height: 1.098vw;
+  border-radius: 50%;
+  background-color: #ffffff;
+  transform: translate(-50%, -50%);
+  visibility: visible;
 }
 
 .question {
