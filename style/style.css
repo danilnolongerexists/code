@@ -5,6 +5,7 @@
 
 /*HEADER*/
 header {
+    display: flex;
     background: rgba(209, 184, 184, 0.4);
     position: absolute;
     width: 100%;
@@ -12,8 +13,10 @@ header {
     z-index: 1;
 }
 
-.burger-wrapper {
-    margin-left: 3vw;
+.logo {
+    width: 4.758vw;
+    height: 5.857vw;
+    margin-left: 1.098vw;
 }
 
 #menu__toggle {
@@ -125,7 +128,7 @@ header {
     align-items: center;
     /*max-width: 1248px;*/
     width: 90.044vw;
-    padding: 0.293vw 1.181vw 0.339vw 1.171vw;
+    /*padding: 0.293vw 1.181vw 0.339vw 1.171vw;*/
 }
 
 .main-menu-list {
@@ -134,10 +137,7 @@ header {
     /*justify-content: center;*/
     list-style-type: none;
     font-size: 1.391vw;
-    margin: 1.245vw 0 0 1.377vw;
-    width: 68.748vw;
-    height: 3.707vw;
-    flex-shrink: 0;
+    margin-left: 3.65vw;
 }
 
 li {
@@ -149,32 +149,19 @@ li {
     color: #000;
 }
 
-.logo {
-    width: 4.758vw;
-    height: 5.857vw;
-    flex-shrink: 0;
-}
-
-.burger {
-    margin: 2.505vw 0 0 1.977vw;
-    width: 2.203vw;
-    height: 1.258vw;
-    flex-shrink: 0;
-}
-
 #search {
     display: none;
-
 }
-
 
 .lupa {
-    margin: 2.16vw 0 0 -5.5vw;
+    width: 2.162vw;
+    height: 1.908vw;
+    transform: rotate(0.031deg);
+    flex-shrink: 0;
+    margin-left: 5.839vw;
 }
 
-
 .img {
-    margin-left: 7.607vw;
     width: 9.297vw;
     height: 6.735vw;
     flex-shrink: 0;
