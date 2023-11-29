@@ -72,56 +72,47 @@ header {
 
 /* контейнер меню */
 .menu-box {
+    border-radius: 0.732vw;
     display: flex;
     position: absolute;
     visibility: hidden;
-    width: 100vw;
-    height: 52.05vw;
+    width: 66.25vw;
+    height: 30.5vw;
     margin: 0;
-    top: 6.589vw;
+    top: 2.798vw;
+    left: 7.906vw;
     list-style: none;
     background-color: #ECEFF1;
     box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
     transition: 0.3s;
-    left: 0;
+    opacity: 0%;
 }
 
 .menu-box ul {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
     padding: 0;
 }
 
   /* элементы меню */
 .menu__item {
     display: block;
-    padding: 0.878vw 1.757vw;
-    color: #333;
-    font-family: 'Roboto', sans-serif;
+    color: #000;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
     font-size: 1.025vw;
-    font-weight: 600;
     text-decoration: none;
     transition: background 0.3s;
-
 }
 
 .menu__item:hover {
     background-color: #CFD8DC;
 }
   
-  
 #menu__toggle:checked ~ .menu-box {
     visibility: visible;
-    left: 0;
-}
-
-.menu-box ul {
-    display: flex;
-    height: 52.05vw;
-    align-items: center;
-    justify-content: center;
+    top: 6.589vw;
+    opacity: 100%;
 }
 
 .menu-box ul li {
