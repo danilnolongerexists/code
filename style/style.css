@@ -16,17 +16,31 @@ header {
 }
 
 .wrapper {
+    margin: 0 auto;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     /*max-width: 1248px;*/
-    width: 90.044vw;
+    width: 97.804vw;
     /*padding: 0.293vw 1.181vw 0.339vw 1.171vw;*/
 }
 
 .logo {
     width: 4.758vw;
     height: 5.857vw;
-    margin-left: 1.098vw;
+}
+
+.lupa {
+    width: 2.162vw;
+    height: 1.908vw;
+    transform: rotate(0.031deg);
+    flex-shrink: 0;
+}
+
+.img {
+    width: 9.297vw;
+    height: 6.735vw;
+    flex-shrink: 0;
 }
 
 #menu__toggle {
@@ -43,6 +57,7 @@ header {
     height: 1.903vw;
     cursor: pointer;
     z-index: 2;
+    margin-left: 1.977vw;
 }
 
 /* добавляем "гамбургер" */
@@ -131,13 +146,19 @@ header {
     list-style-type: none;
 }
 
+.main-menu {
+    display: flex;
+    margin-left: 3.958vw;
+}
+
 .main-menu-list {
     display: flex;
+    /*
     flex-direction: row;
-    /*justify-content: center;*/
+    /*justify-content: center;*
     list-style-type: none;
     font-size: 1.391vw;
-    margin-left: 3.65vw;
+    margin-left: 3.65vw;*/
 }
 
 .main-menu-list {
@@ -163,26 +184,24 @@ li {
 }
 
 .text-header {
+    display: inline-block;
     text-decoration: none;
     color: #000;
+    font-size: 1.464vw;
+}
+
+.text-header span {
+    display: inline-block;
+    transition: 300ms;
+    font-size: 1.098vw;
+}
+
+.text-header:hover span {
+    transform: rotate(90deg);
 }
 
 #search {
     display: none;
-}
-
-.lupa {
-    width: 2.162vw;
-    height: 1.908vw;
-    transform: rotate(0.031deg);
-    flex-shrink: 0;
-    margin-left: 5.839vw;
-}
-
-.img {
-    width: 9.297vw;
-    height: 6.735vw;
-    flex-shrink: 0;
 }
 
 /*SLIDER*/
