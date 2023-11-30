@@ -1,6 +1,8 @@
 * {
     margin: 0;
+    padding: 0;
     font-family: 'Roboto', sans-serif;
+    list-style-type: none;
 }
 
 /*HEADER*/
@@ -29,8 +31,6 @@ header {
     /* используем flex для центрирования содержимого */
     align-items: center;
     /* центрируем содержимое кнопки */
-    position: absolute;
-    left: 7.906vw;
     width: 1.903vw;
     height: 1.903vw;
     cursor: pointer;
@@ -43,7 +43,7 @@ header {
 .menu__btn>span::after {
     display: block;
     position: absolute;
-    width: 100%;
+    width: 2vw;
     height: 0.146vw;
     background-color: #000000;
     transition: 0.3s;
@@ -91,7 +91,7 @@ header {
     opacity: 0%;
 }
 
-.menu-box ul {
+.menu-box ul li {
     display: flex;
     padding: 0;
 }
@@ -138,6 +138,24 @@ header {
     list-style-type: none;
     font-size: 1.391vw;
     margin-left: 3.65vw;
+}
+
+.main-menu-list {
+    cursor: pointer;
+}
+
+.text-header:hover .dropdown-menu {
+opacity: 1;
+visibility: visible;
+}
+
+.dropdown-menu {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    background-color: #ECEFF1;
+    border-radius: 0.366vw;
+    transition: 300ms;
 }
 
 li {
